@@ -1,11 +1,11 @@
 {
-  "name": "waitus",
+  "name": "configer",
   "version": "0.0.1",
   "author": "Aleafs Zhang (zhangxc83@gmail.com)",
   "contributors": [],
-  "homepage": "git@github.com:aleafs/waitus.git",
-  "description": "",
-  "keywords": [ "wait", "events" ],
+  "homepage": "git@github.com:aleafs/configer.git",
+  "description": "Configer is a reader for local file configuration.",
+  "keywords": [ "config", "reader" ],
   "dependencies": {
     "clone" : "=0.1.1",
     "quicktrim" : "=0.0.1"

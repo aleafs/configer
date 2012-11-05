@@ -1,13 +1,24 @@
-[![Build Status](https://secure.travis-ci.org/aleafs/config.png?branch=master)](http://travis-ci.org/aleafs/config)
+[![Build Status](https://secure.travis-ci.org/aleafs/configer.png?branch=master)](http://travis-ci.org/aleafs/configer)
 
 ## About
 
 
 ## Install
 
+```bash
+$ npm install configer
+```
+
 ## Usage
 
 ```javascript
+
+var config = require('configer').create(
+  './global.ini',		/**<	inifile	*/
+  1000,					/**<	autoreload interval, default 0, means don't autoreload	*/
+);
+
+console.log(config.get('key1', 'default'));
 
 ```
 
