@@ -5,10 +5,6 @@
 
 ## Install
 
-```bash
-$ npm install config
-```
-
 ## Usage
 
 ```javascript
