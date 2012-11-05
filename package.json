@@ -7,6 +7,7 @@
     "description": "",
     "keywords": [ "wait", "events" ],
     "dependencies": {
+      "clone" : "=0.1.1",
       "quicktrim" : "=0.0.1"
     },
     "engines": {
