@@ -5,6 +5,24 @@ var config  = require(__dirname + '/../');
 
 describe('file config', function() {
 
+  /* {{{ exception_test() */
+  it('exception_test', function () {
+    try {
+      var cfg = config.create('./a.i_am_not_found');
+      (true).should.eql(false);
+    } catch (e) {
+      e.toString().should.include('UndefinedConfigParser');
+    }
+
+    try {
+      var cfg = config.create('./i_am_not_found.ini');
+      (true).should.eql(false);
+    } catch (e) {
+      e.toString().should.include('no such file or directory \'./i_am_not_found.ini\'');
+    }
+  });
+  /* }}} */
+
   /* {{{ should_ini_config_works_fine() */
   it('should_ini_config_works_fine', function() {
     var cfg	= config.create(__dirname + '/ini/test_config_file.ini');
