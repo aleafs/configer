@@ -1,7 +1,6 @@
 node_modules
-lib-cov
 coverage.html
-test/config.json
+test/ini/config.json
 *.log
 *.tmp
 *.swp
