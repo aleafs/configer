@@ -28,7 +28,7 @@ describe('file config', function() {
     cfg.find('sec1').should.eql({
       'default' : {
         'key1'  : 'aa',
-      'key3'  : 'bb',
+        'key3'  : 'bb',
       },
     });
     cfg.find('').should.eql({});

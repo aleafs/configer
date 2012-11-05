@@ -3,6 +3,8 @@ REPORTER = spec
 TIMEOUT = 5000
 MOCHA = ./node_modules/mocha/bin/mocha
 
+all: test install
+
 install:
 	@npm install
 
@@ -10,4 +12,4 @@ test: install
 	@NODE_ENV=test $(MOCHA) --reporter $(REPORTER) --timeout $(TIMEOUT) \
 		$(MOCHA_OPTS) $(TESTS)
 
-.PHONY: test install
+.PHONY: all
