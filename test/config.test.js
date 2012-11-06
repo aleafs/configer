@@ -32,22 +32,24 @@ describe('file config', function() {
       'key2'    : 0.01,
       'key3'    : 10,
       'key4'    : -213,
+      'key5'    : 0,
       'sec1'    : {
         'key1'  : 'a=b"c',
-      'key2'  : '1',
+        'key2'  : '1',
       },
       'sec1:default'    : {
         'key1'  : 'aa',
-      'key3'  : 'bb',
+        'key3'  : 'bb',
       },
       'iplist'  : {
         '127.0.0.1' : 30,
       },
     });
+    cfg.get('key5').should.eql(0);
     cfg.find('sec1').should.eql({
       'default' : {
         'key1'  : 'aa',
-      'key3'  : 'bb',
+        'key3'  : 'bb',
       },
     });
     cfg.find('').should.eql({});
