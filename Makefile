@@ -14,6 +14,7 @@ test: install
 		$(MOCHA_OPTS) $(TESTS)
 
 cov: install
+	@npm install visionmedia-jscoverage@1.0.0
 	-rm -rf lib.bak
 	-mv -f lib lib.bak && ${JSCOVERAGE} lib.bak lib
 	-$(MOCHA) --reporter html-cov --timeout $(TIMEOUT) $(MOCHA_OPTS) $(TESTS) > ./coverage.html
