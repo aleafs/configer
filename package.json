@@ -8,7 +8,7 @@
   "keywords": [ "config", "reader" ],
   "dependencies": {
     "clone" : "=0.1.1",
-    "quicktrim" : "=0.0.2"
+    "fasttrim" : "=0.1.0"
   },
   "engines": {
     "node": ">=0.6.9"
