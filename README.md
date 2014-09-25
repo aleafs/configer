@@ -1,5 +1,6 @@
 [![Build Status](https://secure.travis-ci.org/aleafs/configer.png?branch=master)](http://travis-ci.org/aleafs/configer)
 [![Dependency Status](https://gemnasium.com/aleafs/configer.png)](https://gemnasium.com/aleafs/configer)
+[![Coverage Status](https://coveralls.io/repos/aleafs/configer/badge.png)](https://coveralls.io/r/aleafs/configer)
 
 ## About
 

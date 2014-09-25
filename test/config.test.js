@@ -12,14 +12,14 @@ describe('file config', function() {
       var cfg = config.create('./a.i_am_not_found');
       (true).should.eql(false);
     } catch (e) {
-      e.toString().should.include('UndefinedConfigParser');
+      e.toString().should.containEql('UndefinedConfigParser');
     }
 
     try {
       var cfg = config.create('./i_am_not_found.ini');
       (true).should.eql(false);
     } catch (e) {
-      e.toString().should.include('no such file or directory \'./i_am_not_found.ini\'');
+      e.toString().should.containEql('no such file or directory \'./i_am_not_found.ini\'');
     }
   });
   /* }}} */
