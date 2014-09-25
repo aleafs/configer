@@ -87,4 +87,11 @@ describe('file config', function() {
   });
   /* }}} */
 
+  /**
+   * XXX: this is a bug case
+   */
+  it('should_parse_ini_string_value_works_fine', function () {
+    config.create(__dirname + '/ini/test_string_value.ini').get('key1').should.eql('abcd=\'aaa\'');
+  });
+
 });
