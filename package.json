@@ -11,7 +11,7 @@
   "description": "Configer is a reader for local file configuration.",
   "keywords": [ "config", "reader" ],
   "dependencies": {
-    "clone" : "=0.1.9",
+    "clone" : "=0.1.18",
     "fasttrim" : "=0.1.0"
   },
   "engines": {
